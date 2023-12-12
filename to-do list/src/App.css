@@ -1,0 +1,158 @@
+:root {
+    --corBg:#1b1b1b;
+    --cor1: #2c2c2c;
+    --cor2: #414141;
+    --cor3: #5c5c5c;
+    --cor4: #777777;
+    --cor5: #0479ff;
+}
+
+
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 120px;
+    max-height: 400px;
+    width: 400px;
+    background-color: var(--cor2);
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+    color: white;
+    background-color: #0655af;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 5px 0;
+}
+
+.inputArea {
+    width: 90%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+#inputText {
+    all: unset;
+    text-indent: 6px;
+    width: 90%;
+    padding: 8px 2px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.inputBtn {
+    all: unset;
+    background-color: var(--cor5);
+    color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 2px 2px 2px 1px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputBtn:hover {
+    background-color: rgb(2, 100, 212);
+
+}
+
+.inputBtn img {
+    display: block;
+    height: 25px;
+}
+
+.taskArea {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    row-gap: 10px;
+    width: 90%;
+    overflow-y: auto;
+}
+
+/* width */
+.taskArea::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 4px;
+  }
+  
+  /* Track */
+.taskArea::-webkit-scrollbar-track {
+    background: #a1a1a1;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+.taskArea::-webkit-scrollbar-thumb {
+    background: #5f5f5f;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+.taskArea::-webkit-scrollbar-thumb:hover {
+    background: #2c2c2c;
+  }
+
+.task {
+    display: flex;
+    min-height: 45px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 9px;
+    background-color: var(--cor3);
+    border-radius: 10px;
+    color: white;
+    margin-right: 5px;
+}
+
+
+
+
+.taskRemoveBtn {
+    all: unset;
+    background-color: var(--cor1);
+    color: white;
+    border-radius: 3px;
+    padding: 2px 2px 2px 1px;
+    cursor: pointer;
+    z-index: 3;
+    height: 27px;
+}
+
+.taskRemoveBtn:hover {
+    background-color: var(--cor2);
+
+}
+
+#removeIcon {
+    height: 27px;
+    display: block;
+
+}
+
