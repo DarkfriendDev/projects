@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'REM', sans-serif;
+}
+
+
+img {
+    display: block;
+    max-height: 50px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgb(108, 56, 177) -20%, rgb(169, 78, 255)60%, rgb(107, 67, 170) 120%);
+    padding: 10px;
+}
+
+h3 {
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* CONTAINER INTEIRO */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    max-width: 700px;
+    padding: 30px;
+    border-radius: 20px;
+    gap: 30px;
+    background:rgb(119, 8, 223);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+    transition: all 1s;
+}
+
+
+@media (max-height: 360px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        min-width: 300px;
+        max-width: 700px;
+        padding: 30px;
+        border-radius: 20px;
+        gap: 30px;
+        background:rgb(119, 8, 223);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+        transition: all 1s;
+    }
+
+    .area-local, .clima-local {
+        margin-left: 30px;
+    }
+
+    
+}
+
+
+
+
+/* BARRA DE PESQUISA */
+
+.area-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 200px;
+    height: 32px;
+    border-radius: 4px;
+}
+
+.btn-search {
+    all: unset;
+    border-radius: 4px;
+    padding: 6px;
+    background-color: rgb(187, 104, 255);
+    cursor: pointer;
+}
+
+.btn-search svg {
+    display: block;
+    height: 20px;
+    color: white;
+}
+
+
+/* LINHA QUE SEPARA AS INFOS DA PESQUISA */
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    opacity: 0;
+}
+
+
+
+/* NOME - LOCAL - PAÍS */
+
+.container-informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    transition: all 0.5s;
+}
+
+/* INFORMAÇÕES DO LUGAR */
+
+.area-local {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: white;
+    
+    display: none;
+    opacity: 0;
+}
+
+.nome-local {
+    margin-left: 7px;
+    font-size: 1.2em;
+}
+
+
+.pais-local {
+    height: 25px;
+}
+
+
+.img-local {
+    height: 20px;
+}
+
+
+.local-area {
+    display: flex;
+}
+
+
+/* CLIMA E TEMPO */
+
+.clima-local {
+    color: white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    row-gap: 20px;
+    
+    display: none;
+    opacity: 0;
+}
+
+.tempo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: white;
+}
+
+.clima {
+    font-size: 1.5em;
+}
+
+.tempo-icone {
+    margin-top: -15px;
+}
+
+
+
+
+/* INFORMAÇÕES EXTRAS: UMIDADE, VEL DO VENTO */
+
+.info-extras {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    
+    display: none;
+    opacity: 0;
+}
+
+
+.umidade-icone {
+    height: 20px;
+    margin-top: -2px;
+    margin-left: 25px; 
+}
+
+.vento-icone {
+    height: 25px;
+    margin-top: -3px;
+}
+
+.umidade-info, .vento-info {
+    font-size: 1em;
+    font-weight: 300;
+    color: white;
+}
+
+
+.linha-vertical {
+    width: 1px;
+    height: 30px;
+    margin-top: -6px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.humidade, .vento {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+

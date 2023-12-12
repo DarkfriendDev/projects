@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@media (min-height: 370px) {
+    h1 {
+        margin-bottom: -5px;
+        font-size: 1.4em !important;
+    }
+
+}
+
+@media (min-width: 370px) {
+    #nome, #cpf {
+        width: 110px ;
+    }
+}
+
+
+@media (min-width: 450px) {
+    #nome, #cpf {
+        width: 140px ;
+    }
+}
+
+
+@media (min-height: 400px){
+    .cadastro {
+        max-height: 380px;
+    }
+}
+
+@media (min-height: 400px) and (min-width: 400px) {
+    h1 {
+        font-size: 2em !important;
+    }
+
+    .cadastro {
+        max-width: 400px;
+        max-height: 500px;
+        padding: 30px;
+    }
+
+    .cadastro-senha {
+        margin-bottom: 0px;
+    }
+
+    .cadastro-mostrar-senha {
+        margin-bottom: 0px;
+    }
+
+    .cadastro-nome label, .cadastro-cpf label, .cadastro-email label, .cadastro-senha label {
+        position: relative;
+        font-size: .9em;
+        top: 20px;
+    }
+
+    input[type="submit"] {
+        font-size: 1.2em;
+        padding: 5px;
+        margin-bottom: -6px;
+    }
+    
+    a {
+        font-size: 1em;
+    }
+
+}
+
+
+@media (min-height: 500px) and (min-width: 500px) {
+    .cadastro-senha {
+        margin-bottom: -30px;
+    }
+
+    .cadastro-mostrar-senha {
+        margin-bottom: -10px;
+    }
+
+    input[type="submit"] {
+        font-size: 1.3em;
+        padding: 5px;
+        margin-bottom: -26px;
+    }
+    
+    a {
+        font-size: 1em;
+    }
+
+    
+}

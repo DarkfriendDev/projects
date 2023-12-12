@@ -1,0 +1,53 @@
+@media (min-width: 400px) and (min-height: 400px) {
+    .tempo-bordas {
+        height: 270px;
+        width: 270px;
+    }
+
+    span {
+        font-size: 3.2rem;
+    }
+
+    .tempo-btns img {
+        height: 55px;
+        width: 55px;
+        padding: 15px;
+    }
+}
+
+
+
+@media (min-width: 540px) and (min-height: 540px) {
+    .tempo-bordas {
+        height: 320px;
+        width: 320px;
+    }
+
+    span {
+        font-size: 3.7rem;
+    }
+
+    .tempo-btns img {
+        height: 55px;
+        width: 55px;
+        padding: 15px;
+    }
+}
+
+
+@media (min-width: 1500px) {
+    .tempo-bordas {
+        height: 400px;
+        width: 400px;
+    }
+
+    span {
+        font-size: 5rem;
+    }
+
+    .tempo-btns img {
+        height: 75px;
+        width: 75px;
+        padding: 19px;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Projeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>Confira o clima de uma cidade</h3>
+            <div class="area-pesquisa">
+                <input type="text" name="search" id="input-search" placeholder="Escolha um lugar">
+                <button class="btn-search">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
+                </button>
+            </div>
+        </div>
+    
+        <!-- CONTAINER INTEIRO -->
+        <div class="container-informacoes">
+
+            <!-- INFORMAÇÕES DO LOCAL -->
+            <div class="area-local">
+                <div class="local-area">
+                    <img src="imagens/local_icon.png" class="img-local">
+                    <span class="nome-local"></span>
+                </div>
+                <img class="pais-local" src="" alt="local"></img>
+            </div>
+
+
+            <!-- CLIMA E ESTADO ATUAL DO LOCAL -->
+            <div class="clima-local">
+                <span class="clima"></span>
+                <div class="tempo">
+                    <span class="tempo-atual"></span>
+                    <img src="" class="tempo-icone"></img>
+                </div>
+            </div>
+
+            <!-- UMIDADE E VELOCIDADE DO VENTO -->
+            <div class="info-extras">
+                <div class="humidade">
+                    <img src="imagens/umidade_icon.png" class="umidade-icone" alt="umidade">
+                    <span class="umidade-info"></span>
+                </div>
+                <span class="linha-vertical"></span>
+                <div class="vento">
+                    <img src="imagens/vento_icon.png" class="vento-icone" alt="vento">
+                    <span class="vento-info"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

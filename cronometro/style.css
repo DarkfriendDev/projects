@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+span {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.7rem;
+}
+
+@keyframes bordas {
+    from {
+        border-color: #0daada;
+    }
+
+    to {
+        border-color: rgb(54, 170, 212);
+        box-shadow: 0px 0px 2px #6cdefa;
+    }
+}
+
+.hora, .horaPP {
+    display: none;
+}
+
+.tempo-bordas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #079cca;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    animation: bordas 2s alternate infinite forwards;
+    animation-play-state: paused;
+
+}
+
+
+.tempo-btns {
+    display: flex;
+    gap: 5px;
+}
+
+.tempo-btns img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+    background-color: #208feb;
+}
+
+
+
+
+
+
+
+
+.pause-btn, .reset-btn {
+    display: none;
+}
