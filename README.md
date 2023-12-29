@@ -1,8 +1,8 @@
 # Meus melhores projetos e mais recentes
 Aqui está todos os meus projetos que considero bem feitos e que valem suas posições no meu portfólio
 
-## Tecnologias utilizadas dentre elas
-### HTML, CSS, Bootstrap, Tailwind, JavaScript, React
+# Tecnologias utilizadas dentre elas
+#### HTML, CSS, Bootstrap, Tailwind, JavaScript, React
 
 
 ## Você pode visitar meu portfólio em: https://portfolio-green-phi.vercel.app/
